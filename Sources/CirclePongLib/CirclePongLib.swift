@@ -5,21 +5,22 @@ import SpriteKit
 @available(iOS 14.0, *)
 public struct CirclePongLib{
     
-    var scene: SKScene {
-        let width = UIScreen.main.bounds.width
-        let height = UIScreen.main.bounds.height
-        let scene = GameScene()
-        scene.size = CGSize(width: width, height: height)
-        scene.scaleMode = .fill
-        scene.backgroundColor = .black
-        return scene
-    }
+    
 
     public init() {
        
     }
     
-    public func getScene() -> SKScene{
+    public static func getScene() -> SKScene{
+        var scene: SKScene {
+            let width = UIScreen.main.bounds.width
+            let height = UIScreen.main.bounds.height
+            let scene = GameScene()
+            scene.size = CGSize(width: width, height: height)
+            scene.scaleMode = .fill
+            scene.backgroundColor = .black
+            return scene
+        }
         return scene
     }
     
