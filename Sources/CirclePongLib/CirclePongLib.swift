@@ -15,6 +15,10 @@ public struct CirclePongLib{
         return scene
     }
 
+    public init() {
+       
+    }
+    
     public func getScene() -> SKScene{
         return scene
     }
