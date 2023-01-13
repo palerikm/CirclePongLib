@@ -3,7 +3,7 @@ import SwiftUI
 import SpriteKit
 
 @available(iOS 14.0, *)
-public struct CirclePongLib: View {
+public struct CirclePongLib{
     
     var scene: SKScene {
         let width = UIScreen.main.bounds.width
@@ -15,11 +15,8 @@ public struct CirclePongLib: View {
         return scene
     }
 
-   
-    public var body: some View {
-        SpriteView(scene: scene)
-            //.frame(width: 300, height: 400)
-            .ignoresSafeArea()
+    public func getScene() -> SKScene{
+        return scene
     }
     
     //public init() {
